@@ -1,8 +1,38 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+
+        body {
+            background-color: lightgray;
+        }
+
+        h1 {
+            font-family: Alegreya;
+            font-style: italic;
+            font-size: 75px;
+        }
+
+        a {
+            background-color: black;
+            color: lightsteelblue;
+            border: 2px solid gray;
+            border-radius: 8px;
+            padding: 5px 5px 5px 5px;
+        }
+
+        b {
+            font-family: Alegreya;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
 <h1>Login</h1>
 <form action="" method="post">
     <p><input type="text" placeholder="Username" name="username"></p>
     <p><input type="password" placeholder="Password" name="password"></p>
-    <input class="btn btn-default" type="submit" value="Login">
+    <input class="btn btn-primary" type="submit" value="Login">
 </form>
       {% if error %}
         <p class="error"><strong>Error:</strong> {{ error }}
